@@ -73,7 +73,6 @@ for dir in listdir(filepath):
 
     loc = [512,512]
 
-
     for i in range(15):
         for j in range(15):
             im_geotrans = (geotrans[0]+i*loc[0],1.0,0.0,geotrans[3]-j*loc[1],0.0,-1.0)

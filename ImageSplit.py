@@ -35,7 +35,7 @@ def write_tiff(filename, im_proj, im_geotrans, im_data, binary=False):
             dataset.GetRasterBand(i + 1).WriteArray(im_data[i])
         del dataset
 
-
+# 选择文件夹
 filepath = r'E:\YXJC\tiff\\'
 pathdir = r'E:\YXJC\ImageSplit\\'
 

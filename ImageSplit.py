@@ -54,6 +54,7 @@ for dir in os.listdir(filepath):
     geotrans = dataset.GetGeoTransform()
     im_proj = dataset.GetProjection()
     loc = [w, h]
+
     for i in trange(k):
         for j in range(k1):
             im_geotrans = (geotrans[0] + i * loc[0]/2, 0.5, 0.0, geotrans[3] - j * loc[1]/2, 0.0, -0.5)

@@ -36,13 +36,13 @@ def write_tiff(filename, im_proj, im_geotrans, im_data, binary=False):
         del dataset
 
 
-filepath = r'E:\YXJC\tiff\\'
-pathdir = r'E:\YXJC\ImageSplit\\'
+filepath = r'D:\JDSX\Data\CG\Image\\'
+pathdir = r'D:\JDSX\Data\CG\ImageSplit\\'
 
-w0 = 30720
-h0 = 30720
-w = 512
-h = 512
+w0 = 20480
+h0 = 20480
+w = 256
+h = 256
 k = int(w0 / w)
 k1 = int(h0 / h)
 count = 0
@@ -85,8 +85,8 @@ for dir in listdir(filepath):
     count = count + 1
 """
 
-# file = './data/split_test/1.tif'
 
+# file = './data/split_test/1.tif'
 
 # dataset=gdal.Open(file)
 # im_width = dataset.RasterXSize
